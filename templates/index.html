@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="index.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebRTC Demo Version 1.0</title>
+</head>
+
+<body>
+  <h2>1. Start your Webcam</h2>
+  <div class="videos">
+    <span>
+      <h3>Local Stream</h3>
+      <video id="webcamVideo" autoplay playsinline></video>
+    </span>
+    <span>
+      <h3>Remote Streams</h3>
+      <video id="remoteVideo" autoplay playsinline></video>
+    </span>
+  </div>
+
+  <div id="create_call">
+    <button id="webcamButton">Start webcam</button>
+    <h2>2. Create a new Call</h2>
+    <button id="callButton">Create Call (offer)</button>
+    <button id="copyButton">Copy Room Code</button>
+  </div>
+
+  <h2>3. Join a Call</h2>
+  <p>Answer the call from a different browser window or device</p>
+
+  <input id="callInput" />
+  <button id="answerButton">Answer</button>
+  <div id="error_message"></div>
+
+
+  <h2>4. Hangup</h2>
+
+  <button id="hangupButton">Hangup</button>
+
+  <button id="logoutButton">Logout</button>
+
+  <script type="module" src="/static/main.js"></script>
+
+</body>
+
+</html>
